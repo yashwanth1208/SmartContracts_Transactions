@@ -15,6 +15,11 @@ async fn main() -> Result<()>{
     println!("HTTP EndPoint: {}",ganache.endpoint());
 
     let wallet: Localwallet = ganche.keys()[0].clone.into();
-    let first_address = wallet.
+    let first_address = wallet.address();
+    println!(
+        "Wallet First Address: {}",first_address.encode_hex::<String>()
+    );
+
+    
 }
 
